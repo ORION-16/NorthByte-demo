@@ -1,7 +1,7 @@
 # NorthByte Restaurant Template
 
 <div align="center">
-<img width="1200" height="475" alt="Restaurant landing page preview" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+<img width="1200" height="475" alt="Restaurant landing page preview" src="assets/hero.png" />
 </div>
 
 NorthByte is a high-end restaurant landing page template built with React, Vite, TypeScript, and Motion. It is designed to feel like a polished hospitality site out of the box while staying easy to rebrand through a central configuration file.
