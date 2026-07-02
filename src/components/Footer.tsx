@@ -34,7 +34,15 @@ export default function Footer({ config, onBookClick }: FooterProps) {
           {/* Logo Brand line and pitch */}
           <div className="lg:col-span-5 space-y-6 text-left">
             <div className="flex items-center space-x-2">
-              <span className="font-serif text-2xl tracking-[0.2em] font-light text-white uppercase">{config.logoText}</span>
+              {config.logoImage ? (
+                <img
+                  src={config.logoImage}
+                  alt={`${config.name} logo`}
+                  className="h-12 w-auto object-contain"
+                />
+              ) : (
+                <span className="font-serif text-2xl tracking-[0.2em] font-light text-white uppercase">{config.logoText}</span>
+              )}
               <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: config.colors.primary }} />
             </div>
             <p className="text-gray-400 font-sans text-xs sm:text-sm leading-relaxed font-light max-w-md">

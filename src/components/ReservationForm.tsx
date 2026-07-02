@@ -414,7 +414,17 @@ export default function ReservationForm({ config, prefilledSpecialRequest, onCle
                 <div className="p-6 sm:p-8 bg-black/60 border-b border-white/[0.03] flex items-center justify-between">
                   <div>
                     <span className="font-mono text-[9px] tracking-widest text-gray-500 uppercase">OFFICIAL ESTABLISHMENT</span>
-                    <h4 className="font-serif text-2xl text-white font-light tracking-widest mt-1">{config.logoText}</h4>
+                    <div className="mt-2">
+                      {config.logoImage ? (
+                        <img
+                          src={config.logoImage}
+                          alt={`${config.name} logo`}
+                          className="h-10 w-auto object-contain"
+                        />
+                      ) : (
+                        <h4 className="font-serif text-2xl text-white font-light tracking-widest">{config.logoText}</h4>
+                      )}
+                    </div>
                   </div>
                   <div className="text-right">
                     <span className="font-mono text-[9px] tracking-widest text-gray-500 uppercase">BOOKING REFERENCE</span>
