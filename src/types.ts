@@ -99,7 +99,6 @@ export interface RestaurantConfig {
   id: string;
   name: string;
   logoText: string;
-  logoImage?: string;
   colors: ColorPalette;
   hero: HeroConfig;
   whyChooseUs: WhyChooseUsItem[];

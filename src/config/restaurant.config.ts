@@ -1,4 +1,3 @@
-import northByteLogo from '../../assets/northbyte-logo.jpeg';
 import { RestaurantConfig } from '../types';
 
 export const L_ETOILE_CONFIG: RestaurantConfig = {
@@ -669,7 +668,6 @@ export const ELEGANT_DARK_CONFIG: RestaurantConfig = {
   id: 'elegant_dark',
   name: "NorthByte Bistro",
   logoText: "NORTHBYTE",
-  logoImage: northByteLogo,
   colors: {
     primary: '#2563eb', // Brilliant Cobalt Blue
     secondary: '#4f46e5', // Deep Indigo

@@ -72,20 +72,12 @@ export default function Navbar({ config, onBookClick, activeSection }: NavbarPro
             onClick={() => handleNavClick('hero')}
             className="flex items-center space-x-2 text-left focus:outline-none"
           >
-            {config.logoImage ? (
-              <img
-                src={config.logoImage}
-                alt={`${config.name} logo`}
-                className="h-10 w-auto object-contain sm:h-12"
-              />
-            ) : (
-              <span 
-                className="font-serif text-xl sm:text-2xl tracking-[0.2em] font-light text-white"
-                style={{ color: '#fff' }}
-              >
-                {config.logoText}
-              </span>
-            )}
+            <span 
+              className="font-serif text-xl sm:text-2xl tracking-[0.2em] font-light text-white"
+              style={{ color: '#fff' }}
+            >
+              {config.logoText}
+            </span>
             <span 
               className="w-1.5 h-1.5 rounded-full" 
               style={{ backgroundColor: config.colors.primary }}
