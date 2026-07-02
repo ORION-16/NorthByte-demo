@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Search, Leaf, Flame, Sparkles, ArrowRight } from 'lucide-react';
 import { RestaurantConfig, DishItem } from '../types';
+import logoImage from '../../assets/logo.png';
 
 interface MenuSectionProps {
   config: RestaurantConfig;
@@ -74,13 +75,19 @@ export default function MenuSection({ config, onExpressInterest }: MenuSectionPr
         <div className="max-w-4xl mx-auto mb-12 flex flex-col md:flex-row gap-6 items-center justify-between p-4 rounded-sm glass-panel border border-white/5 shadow-xl">
           {/* Text Search Input */}
           <div className="relative w-full md:w-80">
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
+            <div className="absolute left-4 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full overflow-hidden border border-white/10 bg-black/60 flex items-center justify-center">
+              <img
+                src={logoImage}
+                alt="North Byte logo"
+                className="w-full h-full object-cover"
+              />
+            </div>
             <input
               type="text"
               placeholder="Search recipes, tags..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full bg-black/40 border border-white/5 focus:border-gray-700 rounded-sm py-3 pl-12 pr-4 text-sm font-sans text-white focus:outline-none placeholder:text-gray-600 transition-colors duration-300"
+              className="w-full bg-black/40 border border-white/5 focus:border-gray-700 rounded-sm py-3 pl-14 pr-4 text-sm font-sans text-white focus:outline-none placeholder:text-gray-600 transition-colors duration-300"
             />
           </div>
 
